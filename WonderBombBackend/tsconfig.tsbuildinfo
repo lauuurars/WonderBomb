@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/clients/authclient.ts","./src/game/game.ts","./src/middlewares/auth.middleware.ts","./src/routes/auth/auth.controller.ts","./src/routes/auth/auth.repository.ts","./src/routes/auth/auth.router.ts"],"version":"6.0.3"}
