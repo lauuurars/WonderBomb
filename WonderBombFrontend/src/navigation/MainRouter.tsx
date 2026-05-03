@@ -10,8 +10,8 @@ export const MainRouter = () => {
 
     return (
         <Routes>
-            <Route path="/login"  element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route path="/login"  element={accessToken ? <Navigate to= "/game"/> : <Login />} />
+            <Route path="/signup" element={accessToken ? <Navigate to= "/game"/> : <Signup />} />
             <Route path="/game"   element={accessToken ? <Game /> : <Navigate to= "/login" />} />
             <Route path="*"       element={<Navigate to="/login" />} />
         </Routes>
